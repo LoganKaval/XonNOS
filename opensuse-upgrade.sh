@@ -39,7 +39,7 @@ else
 
 fi
 
-echo "Do You Want to Copy XMonad.hs and XMobar.config?(y/n)"
+echo "Do You Want to Copy Config Files?(y/n)"
 read xcon
 
 sleep 5
