@@ -47,6 +47,12 @@ sleep 10
 chmod +x port/pak/packages.sh
 bash port/pak/packages.sh
 
+# Zig and River Compilation
+
+chmod +x port/comp/debian-river.sh
+bash port/comp/debian-river.sh $dir
+
+
 # Making Directories
 
 mkdir /home/$dir/.config
