@@ -74,7 +74,7 @@ then
 
         cp config-files/bashrc/bashrc /home/$dir/.bashrc
         sudo cp config-files/waybar/config /home/$dir/.config/waybar/config
-        sudo cp cnfig-files/waybar/style.css /home/$dir/.config/waybar/style.css
+        sudo cp config-files/waybar/style.css /home/$dir/.config/waybar/style.css
         sudo cp config-files/river/debian-init /home/$dir/.config/river/init
         sudo cp config-files/os-release/os-release /etc/os-release
         sudo cp -r backgrounds /usr/share/backgrounds/Jaiyk
