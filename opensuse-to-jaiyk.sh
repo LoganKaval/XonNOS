@@ -69,7 +69,7 @@ sudo mkdir /etc/Jaiyk/bac-files/waybar
 cp config-files/bashrc/bashrc /home/$dir/.bashrc
 sudo cp config-files/waybar/config /etc/Jaiyk/waybar/config
 sudo cp config-files/waybar/style.css /etc/Jaiyk/waybar/style.css
-cp config-files/river/opensuse-init /home/$dir/.config/river/init
+sudo cp config-files/river/opensuse-init /home/$dir/.config/river/init
 sudo cp config-files/os-release/opensuse-os-release /etc/os-release
 sudo cp -r backgrounds /usr/share/backgrounds/Jaiyk
 sudo cp config-files/bashrc/bashrc /etc/skel/.bashrc

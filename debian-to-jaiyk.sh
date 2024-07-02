@@ -50,11 +50,12 @@ bash port/pak/packages.sh
 # Making Directories
 
 mkdir /home/$dir/.config
+mkdir /home/$dir/.config/waybar
 mkdir /home/$dir/.config/river
 sudo mkdir /etc/Jaiyk
-sudo mkdir /etc/Jaiyk/xmobar
 sudo mkdir /usr/share/backgrounds/Jaiyk
 sudo mkdir /etc/skel/.config/river
+sudo mkdir /etc/skel/.config/waybar
 sudo mkdir /usr/share/backgrounds
 sudo mkdir /etc/Jaiyk/bac-files
 sudo mkdir /etc/Jaiyk/bac-files/river
@@ -64,17 +65,19 @@ sudo mkdir /etc/Jaiyk/bac-files/waybar
 
 
 cp config-files/bashrc/bashrc /home/$dir/.bashrc
-sudo cp config-files/xmobar/xmobar.config /etc/Jaiyk/xmobar/xmobar.config
-cp config-files/xmonad/xmonad.hs /home/$dir/.xmonad/xmonad.hs
-sudo xmonad --recompile && xmonad --restart
-xmonad --recompile && xmonad --restart
+sudo cp config-files/waybar/config /home/$dir/.config/waybar/config
+sudo cp cnfig-files/waybar/style.css /home/$dir/.config/waybar/style.css
+sudo cp config-files/river/init /home/$dir/.config/river/init
 sudo cp config-files/os-release/os-release /etc/os-release
 sudo cp -r backgrounds /usr/share/backgrounds/Jaiyk
 sudo cp config-files/bashrc/bashrc /etc/skel/.bashrc
-sudo cp config-files/xmonad/xmonad.hs /etc/skel/.xmonad/xmonad.hs
+sudo cp config-files/waybar/config /etc/skel/.config/waybar/config
+sudo cp config-files/waybar/style.css /etc/skel/.config/waybar/style.css
+sudo cp config-files/river/init /etc/skel/.config/river/init
 sudo cp config-files/install-type/install-type /etc/Jaiyk/install-type
-sudo cp config-files/xmonad/xmonad.sh /etc/Jaiyk//bac-files/xmonad.sh
-sudo cp config-files/xmobar/xmobar.config /etc/Jaiyk/bac-files/xmobar.config
+sudo cp config-files/river/init /etc/Jaiyk//bac-files/river/init
+sudo cp config-files/waybar/config /etc/Jaiyk/bac-files/waybar/config
+sudo cp config-files/waybar/style.css /etc/Jaiyk/bac-files/waybar/style.css
 sudo cp config-files/bashrc/bashrc /etc/Jaiyk/bac-files/bashrc
 
 
@@ -280,12 +283,15 @@ fi
 
 # Making Directories Again
 
+
+
 mkdir /home/$dir/.config
-mkdir /home/$dir/.xmonad
+mkdir /home/$dir/.config/waybar
+mkdir /home/$dir/.config/river
 sudo mkdir /etc/Jaiyk
-sudo mkdir /etc/Jaiyk/xmobar
 sudo mkdir /usr/share/backgrounds/Jaiyk
 sudo mkdir /etc/skel/.config/river
+sudo mkdir /etc/skel/.config/waybar
 sudo mkdir /usr/share/backgrounds
 sudo mkdir /etc/Jaiyk/bac-files
 sudo mkdir /etc/Jaiyk/bac-files/river
@@ -295,18 +301,22 @@ sudo mkdir /etc/Jaiyk/bac-files/waybar
 
 
 cp config-files/bashrc/bashrc /home/$dir/.bashrc
-sudo cp config-files/xmobar/xmobar.config /etc/Jaiyk/xmobar/xmobar.config
-cp config-files/xmonad/xmonad.hs /home/$dir/.xmonad/xmonad.hs
-sudo xmonad --recompile && xmonad --restart
-xmonad --recompile && xmonad --restart
+sudo cp config-files/waybar/config /home/$dir/.config/waybar/config
+sudo cp cnfig-files/waybar/style.css /home/$dir/.config/waybar/style.css
+sudo cp config-files/river/init /home/$dir/.config/river/init
 sudo cp config-files/os-release/os-release /etc/os-release
 sudo cp -r backgrounds /usr/share/backgrounds/Jaiyk
 sudo cp config-files/bashrc/bashrc /etc/skel/.bashrc
-sudo cp config-files/xmonad/xmonad.hs /etc/skel/.xmonad/xmonad.hs
+sudo cp config-files/waybar/config /etc/skel/.config/waybar/config
+sudo cp config-files/waybar/style.css /etc/skel/.config/waybar/style.css
+sudo cp config-files/river/init /etc/skel/.config/river/init
 sudo cp config-files/install-type/install-type /etc/Jaiyk/install-type
-sudo cp config-files/xmonad/xmonad.sh /etc/Jaiyk//bac-files/xmonad.sh
-sudo cp config-files/xmobar/xmobar.config /etc/Jaiyk/bac-files/xmobar.config
+sudo cp config-files/river/init /etc/Jaiyk//bac-files/river/init
+sudo cp config-files/waybar/config /etc/Jaiyk/bac-files/waybar/config
+sudo cp config-files/waybar/style.css /etc/Jaiyk/bac-files/waybar/style.css
 sudo cp config-files/bashrc/bashrc /etc/Jaiyk/bac-files/bashrc
+
+
 
 # Version Code
 
